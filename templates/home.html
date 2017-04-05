@@ -1,0 +1,20 @@
+<html>
+<title>HOME</title>
+<body>
+HELLO<br>
+
+
+<li> <a href="/signup">CREATE ACCOUNT</a> </li>
+
+<li> <a href="/todo">TO DO LIST</a> </li>
+
+
+    {% if LogInstatus == True %}
+    <a href = "/login">Log out</a>
+    {% else %}
+    <a href = "/logout">Log Out</a>
+    {% endif %}
+
+
+</body>
+</html>

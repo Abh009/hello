@@ -1,0 +1,25 @@
+<html>
+<title> Sign Up </title>
+<body>
+
+        <h2 align = "center">Sign UP </h2>
+        <form name="frm" method="post">
+          {% csrf_token %}
+         <div align="center">
+         <label><b>Email</b></label><br>
+         <input type="text" placeholder="Username" name="uname" required><br>
+
+         <label><b>Password</b></label><br>
+         <input type="password" placeholder="Password" name="psw" required><br>
+
+         <label><b>Repeat Password</b></label><br>
+         <input type="password" placeholder="Repeat Password" name="psw-repeat" required><br><br>
+
+         <div>
+           <button type="button"  class="cancelbtn">Cancel</button>
+           <button type="submit" class="signupbtn">Sign Up</button><br>
+         </div>
+       </div>
+      </form>
+</body>
+</html>

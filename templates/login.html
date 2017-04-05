@@ -1,0 +1,21 @@
+<html>
+<title> Log IN </title>
+<body>
+
+        <h2 align = "center">Log IN</h2>
+        <form name="frm" method = "post">
+          {% csrf_token %}
+         <div align="center">
+           <label><b>Username</b></label><br>
+           <input type="text" placeholder="Username" name="uname" required><br>
+
+           <label><b>Password</b></label><br>
+           <input type="password" placeholder="Password" name="psw" required><br><br>
+
+           <button type="submit">Login</button>
+           <button type="button" class="cancelbtn">Cancel</button><br>
+
+         </div>
+        </form>
+</body>
+</html>
